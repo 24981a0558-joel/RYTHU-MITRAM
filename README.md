@@ -1,184 +1,73 @@
-# Rythu Mitra - AI-Powered Personal Farming Assistant
+# Welcome to your Lovable project
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Gemini AI](https://img.shields.io/badge/Gemini_AI-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
+## Project info
 
-**An intelligent farming assistant web application designed specifically for Telugu farmers**
+**URL**: https://lovable.dev/projects/d594b8ce-08cc-48ea-a02c-7b117816d83e
 
-*Providing personalized crop advice, pest detection, and weather-based recommendations in their local language*
+## How can I edit this code?
 
----
+There are several ways of editing your application.
 
-## 🌟 Overview
+**Use Lovable**
 
-**Rythu Mitra** (రైతు మిత్ర - "Farmer's Friend") is a comprehensive web-based farming assistant that leverages artificial intelligence to help Telugu farmers make informed decisions about their crops.
+Simply visit the [Lovable Project](https://lovable.dev/projects/d594b8ce-08cc-48ea-a02c-7b117816d83e) and start prompting.
 
-### Key Features
+Changes made via Lovable will be committed automatically to this repo.
 
-- 🤖 **AI-Powered Chat Assistant** - Get farming advice in Telugu/English powered by Google Gemini AI
-- 🎤 **Voice Input** - Ask questions using your voice in Telugu or English
-- 📸 **Pest Detection** - Upload crop images for AI-powered pest/disease identification
-- 🌦️ **Real-Time Weather** - Live weather data for your farming location
-- 📊 **Crop Analytics** - Track crop health trends with interactive charts
-- 🌾 **70+ Crops Supported** - Comprehensive crop database across 7 categories
-- 📱 **Mobile-Responsive** - Optimized for smartphones used by rural farmers
-- 🔄 **Bilingual Support** - Full Telugu and English language support
+**Use your preferred IDE**
 
----
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-## 🚀 Quick Start
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-### Prerequisites
+Follow these steps:
 
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Python 3.x (for local server)
-- Gemini API key (free from Google)
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-### Installation
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/YOUR_USERNAME/rythu-mitra.git
-cd rythu-mitra
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-2. **Get Gemini API Key**
-   - Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
-   - Sign in and create a free API key
-   - Copy the generated key
+**Edit a file directly in GitHub**
 
-3. **Configure API Key**
-   - Open `app.js`
-   - Replace `YOUR_GEMINI_API_KEY_HERE` with your actual API key on line 2
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-4. **Start Local Server**
-```bash
-python -m http.server 8080
-```
+**Use GitHub Codespaces**
 
-5. **Open Application**
-   - Navigate to `http://localhost:8080` in your browser
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
----
+## What technologies are used for this project?
 
-## 📖 Usage
+This project is built with:
 
-### For Farmers
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-1. **Login/Signup** - Create account with email and password
-2. **Setup Profile** - Enter your name, location, crop type, and language preference
-3. **Ask Questions** - Use text or voice to ask farming queries
-4. **Upload Images** - Take photos of pests/diseases for instant analysis
-5. **View Dashboard** - Check weather, crop health, soil moisture, and recommendations
+## How can I deploy this project?
 
-### Sample Questions to Try
+Simply open [Lovable](https://lovable.dev/projects/d594b8ce-08cc-48ea-a02c-7b117816d83e) and click on Share -> Publish.
 
-- "What fertilizer should I use for rice cultivation?"
-- "How do I control pests in my tomato plants?"
-- "When is the best time to irrigate my crops?"
-- "What are the signs of nitrogen deficiency?"
+## Can I connect a custom domain to my Lovable project?
 
----
+Yes, you can!
 
-## 📁 Project Structure
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-```
-rythu-mitra/
-├── index.html          # Main HTML structure (12.6 KB)
-├── styles.css          # Complete styling (15.2 KB)
-├── app.js             # Application logic (20 KB)
-├── README.md          # This file
-├── DOCUMENTATION.md   # Detailed technical documentation
-├── LICENSE           # MIT License
-└── .gitignore        # Git ignore rules
-```
-
----
-
-## 🛠️ Technology Stack
-
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **AI**: Google Gemini Pro API
-- **Weather**: OpenWeatherMap API (optional)
-- **Charts**: Chart.js
-- **Icons**: Font Awesome
-- **Voice**: Web Speech API
-
----
-
-## 🌾 Supported Crops
-
-### 70+ Crops in 7 Categories
-
-- **Cereals**: Rice, Wheat, Maize, Sorghum, Pearl Millet, Finger Millet, Barley
-- **Pulses**: Red Gram, Green Gram, Black Gram, Bengal Gram, Lentil, Horse Gram
-- **Cash Crops**: Cotton, Sugarcane, Tobacco, Groundnut, Sunflower, Soybean, Castor, Safflower
-- **Spices**: Turmeric, Chili, Coriander, Cumin, Fenugreek, Garlic, Ginger
-- **Vegetables**: Tomato, Brinjal, Okra, Onion, Potato, Cabbage, Cauliflower, and more
-- **Fruits**: Mango, Banana, Papaya, Guava, Pomegranate, Grapes, Citrus, Watermelon
-- **Others**: Coconut, Arecanut, Oil Palm, Mulberry, Fodder Crops
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-See [DOCUMENTATION.md](DOCUMENTATION.md) for detailed technical documentation.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- Telugu farmers for inspiration and feedback
-- Google Gemini AI for powerful language models
-- Chart.js for data visualization
-- Font Awesome for icon library
-- Open-source community for tools and support
-
----
-
-## 📞 Support
-
-- 📧 Email: support@rythumitra.com
-- 🐛 Issues: [GitHub Issues](https://github.com/YOUR_USERNAME/rythu-mitra/issues)
-- 📖 Docs: [Full Documentation](DOCUMENTATION.md)
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Mobile app (Android/iOS)
-- [ ] Offline PWA mode
-- [ ] Community forum
-- [ ] Marketplace integration
-- [ ] Multi-language support (10+ languages)
-- [ ] IoT sensor integration
-- [ ] Satellite imagery analysis
-
----
-
-<div align="center">
-
-**Made with ❤️ for Telugu Farmers**
-
-**రైతుల కోసం ప్రేమతో రూపొందించబడింది**
-
-⭐ Star this repo if you find it helpful!
-
-</div>
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

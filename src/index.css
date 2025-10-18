@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Agricultural color palette */
+    --background: 42 23% 96%;
+    --foreground: 120 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 25% 15%;
+
+    /* Rich green primary */
+    --primary: 110 48% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 110 48% 20%;
+
+    /* Earth tone secondary */
+    --secondary: 30 45% 60%;
+    --secondary-foreground: 120 25% 15%;
+
+    --muted: 42 23% 92%;
+    --muted-foreground: 120 10% 45%;
+
+    /* Sky blue accent */
+    --accent: 200 70% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 110 15% 85%;
+    --input: 110 15% 85%;
+    --ring: 110 48% 25%;
+
+    --radius: 0.75rem;
+
+    /* Gradient definitions */
+    --gradient-hero: linear-gradient(135deg, hsl(110 48% 25%), hsl(110 48% 35%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(42 23% 98%));
+    --gradient-accent: linear-gradient(135deg, hsl(200 70% 45%), hsl(200 70% 55%));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 12px hsl(110 48% 25% / 0.08);
+    --shadow-strong: 0 8px 24px hsl(110 48% 25% / 0.12);
+    --shadow-glow: 0 0 40px hsl(110 60% 50% / 0.2);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 120 20% 8%;
+    --foreground: 42 23% 96%;
+
+    --card: 120 20% 12%;
+    --card-foreground: 42 23% 96%;
+
+    --popover: 120 20% 12%;
+    --popover-foreground: 42 23% 96%;
+
+    --primary: 110 60% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 110 60% 40%;
+
+    --secondary: 30 45% 40%;
+    --secondary-foreground: 42 23% 96%;
+
+    --muted: 120 20% 16%;
+    --muted-foreground: 42 15% 65%;
+
+    --accent: 200 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 15% 20%;
+    --input: 120 15% 20%;
+    --ring: 110 60% 45%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(110 60% 25%), hsl(110 60% 35%));
+    --gradient-card: linear-gradient(180deg, hsl(120 20% 12%), hsl(120 20% 14%));
+    --gradient-accent: linear-gradient(135deg, hsl(200 70% 40%), hsl(200 70% 50%));
+    
+    --shadow-soft: 0 4px 12px hsl(0 0% 0% / 0.3);
+    --shadow-strong: 0 8px 24px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 40px hsl(110 60% 40% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .glass-effect {
+    background: hsl(var(--background) / 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+}
