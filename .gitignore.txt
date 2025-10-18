@@ -1,0 +1,35 @@
+# Ignore node modules
+node_modules/
+
+# Ignore environment variables
+.env
+.env.local
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore logs
+*.log
+npm-debug.log*
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore build outputs
+dist/
+build/
+
+# Ignore cache
+.cache/
+
+# Keep the API keys private (if using separate config file)
+config.local.js
+secrets.js
