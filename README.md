@@ -66,7 +66,13 @@ This combination allowed us to build and deploy a full AI-integrated system quic
 Follow these steps to run RYTHU MITRAM locally 👇
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/24981a0558-joel/RYTHU-MITRAM.git
 cd RYTHU-MITRAM
-### 
+
+###2️⃣ Install Dependencies
+
+npm install
+
+
+
