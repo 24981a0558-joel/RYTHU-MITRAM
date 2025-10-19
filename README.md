@@ -70,9 +70,52 @@ Follow these steps to run RYTHU MITRAM locally 👇
 git clone https://github.com/24981a0558-joel/RYTHU-MITRAM.git
 cd RYTHU-MITRAM
 
-###2️⃣ Install Dependencies
+2️⃣ Install Dependencies
 
 npm install
+
+3️⃣ Configure Environment Variables
+
+Create a .env file in the root folder and add your keys:
+VITE_SUPABASE_PROJECT_ID="yjjmrdsfakfjtmrsmofj"
+VITE_SUPABASE_PUBLISHABLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlqam1yZHNmYWtmanRtcnNtb2ZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA3NDk5MjIsImV4cCI6MjA3NjMyNTkyMn0.zbJy8lySjI6tqvLARXjOI0ojvsXGnxhBo_aSUa_3MOA"
+VITE_SUPABASE_URL="https://yjjmrdsfakfjtmrsmofj.supabase.co"
+
+4️⃣ Run the Development Server
+
+npm run dev
+
+🧩 Project Structure
+
+RYTHU-MITRAM/
+│
+├── public/              # Static assets (images, icons, etc.)
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Main pages (Home, Dashboard, Chatbot, etc.)
+│   ├── lib/             # Supabase and API setup
+│   ├── assets/          # Images, logos
+│   ├── App.tsx          # Root component
+│   └── main.tsx         # App entry point
+│
+├── .env.example         # Example environment file
+├── package.json
+├── tailwind.config.ts
+├── vite.config.ts
+└── README.md
+
+📈 Future Improvements
+
+.🌐 Add multilingual chatbot (Telugu, Hindi, English)
+
+.🌾 AI-based voice and crop detection for crop diseases in multipule languges
+
+.📱 Mobile PWA support for offline mode
+
+.🔔 Notifications for weather alerts and government schemes
+
+.🤝 Integration with government agriculture data APIs
+
 
 
 
